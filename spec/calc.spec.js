@@ -8,6 +8,9 @@ describe("The function sum() used in the Calculator", () => {
   it("should return 0 for an empty array", () => {
     expect(sum([])).toBe(0);
   });
+  it("should return 0 for bad type parameter", () => {
+    expect(sum("truc")).toBe(0);
+  });
 
   it("should throw an error if no parameter is provided", () => {
     expect(() => {
@@ -36,6 +39,9 @@ describe("The function avg() used in the Calculator", () => {
 
   it("should return 0 for an empty array", () => {
     expect(avg([])).toBe(0);
+  });
+  it("should return 0 for bad typr parameter", () => {
+    expect(avg("truc")).toBe(0);
   });
 
   it("should throw an error if no parameter is provided", () => {
